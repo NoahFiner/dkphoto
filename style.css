@@ -83,3 +83,9 @@ h1 {
   margin: 1em auto;
   font-size: 0.8em;
 }
+
+@media screen and (max-width: 850px) {
+  #about-subtitle {
+    width: 80%;
+  }
+}
