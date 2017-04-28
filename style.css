@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300');
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "Montserrat", "Helvetica Neue", "helvetica", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#construction {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#logo {
+  height: auto;
+  width: 300px;
+  margin: 50px auto 100px auto;
+  display: block;
+}
+
+#about {
+  margin-top: -0.75em;
+}
+
+#about-subtitle {
+  width: 40%;
+  margin: 1em auto;
+  font-size: 1.2em;
+  line-height: 1.4;
+  text-align: center;
+}
+
+#content-lower {
+  background-color: #000;
+  width: 100vw;
+  height: auto;
+  margin-top: 7em;
+  color: #fff;
+}
+
+#content-lower::before {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  width: 110vw;
+  left: -5vw;
+  margin-top: -2.5em;
+  height: 6em;
+  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  z-index: -1;
+}
+
+h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5em;
+}
+
+#form {
+  display: block;
+  margin: 5em auto;
+}
+
+#footer {
+  margin-top: 5em;
+  width: 100vw;
+  height: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #aaa;
+}
+
+#footer > a, #footer > p {
+  color: #aaa;
+  margin: 1em auto;
+  font-size: 0.8em;
+}
