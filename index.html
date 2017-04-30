@@ -4,19 +4,55 @@
   <title>Day and Knight Photography</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
 </head>
 <body>
-  <img src="logo.png" id="logo"/>
-  <!-- <p id="construction">This page is currently under construction</p> -->
-  <h1 id="about">about us</h1>
-  <p id="about-subtitle">We are Day and Knight Photography, a collaboration between Cormac Dowling, Noah Finer, and Stephanie Zhang to supply a professional, affordable, and intimate portrait experience.</p>
-  <div id="content-lower">
-    <h1 id="signup">sign up</h1>
-    <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLScgw6TBoAFEMPC-nLM4t7mszaFYZuhrF0dda6RicTyVDItPxw/viewform?embedded=true" width="80%" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-    <div id="footer">
-      <a href="mailto:dayknightphoto@gmail.com">dayknightphoto@gmail.com</a>
-      <p>Page under construction</p>
+  <div id="content-initial">
+    <div id="content-initial-animation">
+      <div id="initial-mask"></div>
+      <div id="gallery"></div>
     </div>
+    <img src="logo.png" id="logo"/>
+    <div id="header-top">
+      <a href="#about-outer">about us</a>
+      <a href="#photographers">our photographers</a>
+      <a href="#portfolio">portfolio</a>
+      <a href="mailto:dayknightphoto">contact</a>
+    </div>
+    <div id="signup-outer">
+      <a id="signup" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScgw6TBoAFEMPC-nLM4t7mszaFYZuhrF0dda6RicTyVDItPxw/viewform?usp=sf_link">sign up</a>
+    </div>
+  </div>
+  <div class="content-outer black" id="about-outer">
+    <h1 id="about">about us</h1>
+    <p class="subtitle">We are Day and Knight Photography, a collaboration between Cormac Dowling, Noah Finer, and Stephanie Zhang to supply a professional, affordable, and intimate portrait experience.</p>
+  </div>
+  <div class="content-outer white">
+    <h1>cormac dowling</h1>
+    <div class="photo-text">
+      <img src="img/cormac.jpg" />
+      <p class="subtitle right">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    </div>
+  </div>
+  <div class="content-outer black">
+    <h1>noah finer</h1>
+    <div class="photo-text">
+      <p class="subtitle left">Noah Finer is an award-winning photographer, designer, and web developer. After taking a photography class in his sophomore year to expand upon his previous talents, he continued to learn whatever was possible about photography. He has since then had the honor to take over @universetoday for a day for his astrophotography, sold prints on bohowallart.com, has been featured on 34 different Instagram hubs, and has earned his bearded dragon, Spiky1, bearded dragon of the month through his photography.</p>
+      <img src="img/noah.jpg" />
+    </div>
+  </div>
+  <div class="content-outer white">
+    <h1>stephanie zhang</h1>
+    <div class="photo-text">
+      <img src="img/stephanie.jpg" />
+      <p class="subtitle right">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    </div>
+  </div>
+  <div id="footer">
+    <a href="mailto:dayknightphoto@gmail.com">dayknightphoto@gmail.com</a>
+    <p>Page under construction</p>
   </div>
 </body>
 </html>
