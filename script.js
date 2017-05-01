@@ -21,4 +21,7 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+
+  $("#gallery")
 });
