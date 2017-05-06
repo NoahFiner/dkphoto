@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300');
 
-body {
+body, html {
   overflow-x: hidden;
+  width: 100vw;
+  position: relative;
 }
 
 * {
@@ -384,21 +386,62 @@ h1 {
     left: 2vw;
     top: 2vw;
   }
+
+  #header-top {
+    transform: scale(0.5); /* when you're really lazy*/
+    -webkit-transform: scale(0.75);
+    transform-origin: top right;
+    -webkit-transform-origin: top right;
+  }
+
   #intro-center {
-    font-size: 4em;
-    top: 50%;
-    left: 35%;
-    width: 60%;
+    font-size: 3em;
+    top: 55%;
+    left: 40%;
+    width: 70%;
     transform: 0;
     -webkit-transform: 0;
     text-align: left;
   }
+
+  #initial-mask {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  }
+
   #signup-outer {
     text-align: right;
-    bottom: 5em;
+    bottom: 8em;
   }
+
   #signup {
     font-size: 2em;
     margin-right: 1em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .photo-text > img {
+    width: 90%;
+    height: auto;
+  }
+
+  .photo-text > .subtitle {
+    text-align: left;
+    font-size: 1em;
+  }
+
+  .samples > h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .samples > a  {
+    font-size: 1em;
   }
 }

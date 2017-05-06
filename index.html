@@ -6,7 +6,8 @@
   <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
 </head>
 <body>
   <div id="content-initial">
@@ -24,21 +25,53 @@
       <a href="#about-outer">about us</a>
       <a href="#photographers">our photographers</a>
       <a href="#portfolio">gallery</a>
-      <a href="mailto:dayknightphoto">contact</a>
+      <a href="mailto:dayknightphoto@gmail.com">contact</a>
     </div>
     <div id="signup-outer">
       <a id="signup" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScgw6TBoAFEMPC-nLM4t7mszaFYZuhrF0dda6RicTyVDItPxw/viewform?usp=sf_link">sign up</a>
     </div>
   </div>
-  <div class="content-outer black" id="about-outer">
-    <h1 id="about">about us</h1>
-    <p class="subtitle">We are Day and Knight Photography, a collaboration between Cormac Dowling, Noah Finer, and Stephanie Zhang to supply a professional, affordable, and intimate portrait experience.</p>
-  </div>
-  <div class="content-outer white" id="photographers">
-    <h1>noah finer</h1>
-    <div class="photo-text">
-      <img src="img/noah.jpg" />
-      <p class="subtitle right">Noah Finer is an award-winning photographer, designer, and web developer. After taking a photography class in his sophomore year to expand upon his previous talents, he continued to learn whatever was possible about it. He has since then had the honor to take over @universetoday for a day for his astrophotography, sold prints on bohowallart.com, has been featured on 34 different Instagram hubs, and has earned his bearded dragon, Spiky1, bearded dragon of the month through his photography. After massive experience in portraiture from being the media captain of the robotics team and a photographer for the Royal Banner, he would love to be chosen to take your senior photos!</p>
+  <div id="content-lower">
+    <div class="content-outer black" id="about-outer">
+      <h1 id="about">about us</h1>
+      <p class="subtitle">We are Day and Knight Photography, a collaboration between Noah Finer, Cormac Dowling, and Stephanie Zhang to supply a professional, affordable, and intimate portrait experience.</p>
+    </div>
+    <div class="content-outer white" id="photographers">
+      <h1>noah finer</h1>
+      <div class="photo-text">
+        <img src="img/noah.jpg" />
+        <p class="subtitle right">Noah Finer is an award-winning photographer, designer, and web developer. After taking a photography class in his sophomore year to expand upon his previous talents, he continued to learn whatever was possible about it. He has since then had the honor to take over @universetoday for a day for his astrophotography, sold prints on bohowallart.com, has been featured on 34 different Instagram hubs, and has earned his bearded dragon, Spiky1, bearded dragon of the month through his photography. After massive experience in portraiture from being the media captain of the robotics team and a photographer for the Royal Banner, he would love to be chosen to take your senior photos!</p>
+        <div class="samples white">
+          <h2>samples</h2>
+          <a href="https://www.instagram.com/noahfiner/" target="_blank">@noahfiner</a>
+          <a href="https://www.instagram.com/spiky1and2/" target="_blank">@spiky1and2</a>
+          <a href="https://www.instagram.com/fairviewrobotics/" target="_blank">@fairviewrobotics</a>
+          <a href="http://www.500px.com/noahfiner" target="_blank">500px</a>
+          <a href="http://www.noahfiner.com" target="_blank">website</a>
+        </div>
+      </div>
+    </div>
+    <div class="content-outer black">
+      <h1>cormac dowling</h1>
+      <div class="photo-text">
+        <p class="subtitle left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <img src="img/cormac.jpg" />
+      </div>
+      <div class="samples black">
+        <h2>samples</h2>
+        <a href="https://www.instagram.com/noahfiner/" target="_blank">@noahfiner</a>
+        <a href="https://www.instagram.com/spiky1and2/" target="_blank">@spiky1and2</a>
+        <a href="https://www.instagram.com/fairviewrobotics/" target="_blank">@fairviewrobotics</a>
+        <a href="http://www.500px.com/noahfiner" target="_blank">500px</a>
+        <a href="http://www.noahfiner.com" target="_blank">website</a>
+      </div>
+    </div>
+    <div class="content-outer white">
+      <h1>stephanie zhang</h1>
+      <div class="photo-text">
+        <img src="img/stephanie.jpg" />
+        <p class="subtitle right">Stephanie Zhang has enjoyed photography from a young age. After years of sharing a camera with her family, she bought her first camera when she was thirteen. She started a YouTube channel with her best friend two years ago and currently does both photography and videography. She started taking senior pictures in 2015 and enjoys getting to know individuals and their preferences while taking portraits. She is the photographer for her school’s National Honor Society, which involves taking pictures at events such as induction.</p>
+      </div>
       <div class="samples white">
         <h2>samples</h2>
         <a href="https://www.instagram.com/noahfiner/" target="_blank">@noahfiner</a>
@@ -48,44 +81,14 @@
         <a href="http://www.noahfiner.com" target="_blank">website</a>
       </div>
     </div>
-  </div>
-  <div class="content-outer black">
-    <h1>cormac dowling</h1>
-    <div class="photo-text">
-      <p class="subtitle left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-      <img src="img/cormac.jpg" />
+    <div class="content-outer black gallery" id="portfolio">
+      <h1>gallery</h1>
+      <div id="gallery-outer"></div>
     </div>
-    <div class="samples black">
-      <h2>samples</h2>
-      <a href="https://www.instagram.com/noahfiner/" target="_blank">@noahfiner</a>
-      <a href="https://www.instagram.com/spiky1and2/" target="_blank">@spiky1and2</a>
-      <a href="https://www.instagram.com/fairviewrobotics/" target="_blank">@fairviewrobotics</a>
-      <a href="http://www.500px.com/noahfiner" target="_blank">500px</a>
-      <a href="http://www.noahfiner.com" target="_blank">website</a>
+    <div id="footer">
+      <a href="mailto:dayknightphoto@gmail.com">dayknightphoto@gmail.com</a>
+      <p>Page under construction</p>
     </div>
-  </div>
-  <div class="content-outer white">
-    <h1>stephanie zhang</h1>
-    <div class="photo-text">
-      <img src="img/stephanie.jpg" />
-      <p class="subtitle right">Stephanie Zhang has enjoyed photography from a young age. After years of sharing a camera with her family, she bought her first camera when she was thirteen. She started a YouTube channel with her best friend two years ago and currently does both photography and videography. She started taking senior pictures in 2015 and enjoys getting to know individuals and their preferences while taking portraits. She is the photographer for her school’s National Honor Society, which involves taking pictures at events such as induction.</p>
-    </div>
-    <div class="samples white">
-      <h2>samples</h2>
-      <a href="https://www.instagram.com/noahfiner/" target="_blank">@noahfiner</a>
-      <a href="https://www.instagram.com/spiky1and2/" target="_blank">@spiky1and2</a>
-      <a href="https://www.instagram.com/fairviewrobotics/" target="_blank">@fairviewrobotics</a>
-      <a href="http://www.500px.com/noahfiner" target="_blank">500px</a>
-      <a href="http://www.noahfiner.com" target="_blank">website</a>
-    </div>
-  </div>
-  <div class="content-outer black gallery">
-    <h1>gallery</h1>
-    <div id="gallery-outer"></div>
-  </div>
-  <div id="footer">
-    <a href="mailto:dayknightphoto@gmail.com">dayknightphoto@gmail.com</a>
-    <p>Page under construction</p>
   </div>
 </body>
 </html>
