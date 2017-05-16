@@ -42,7 +42,8 @@ $(document).ready(function(){
     descs = descs.concat(descs);
     shuffle(descs);
     for(i = 0; i < descs.length; i++) {
-      $("#intro-descs").append("<p class='descs hidden' style='transition: opacity 0.25s, transform 0.25s, -webkit-trasnform 0.25s; transition-delay: "+(i*0.025*Math.random())+"s'>"+descs[i]+"</p>");
+      var highlighted = (Math.random() < 0.1) ? "highlighted" : "";
+      $("#intro-descs").append("<p class='descs hidden "+highlighted+"' style='transition: opacity 0.25s, transform 0.25s, -webkit-trasnform 0.25s; transition-delay: "+(i*0.025*Math.random())+"s'>"+descs[i]+"</p>");
     }
     setTimeout(function() {$(".descs").removeClass("hidden")}, 100);
     setTimeout(function() {$(".descs").addClass("hidden")}, 100 + time);
