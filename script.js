@@ -55,8 +55,9 @@ $(document).ready(function(){
 
   //gallery
   var imgsHidden = true;
-  var imgs = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
+  var imgs = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg"];
   var addImgs = function() {
+    $("#loading").remove();
     imgsHidden = false;
     for(i = 0; i < imgs.length; i++) {
       $("#gallery-outer").append("<img id='"+imgs[i]+"' src='img/"+imgs[i]+"' class='photo' />");

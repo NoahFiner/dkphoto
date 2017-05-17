@@ -15,6 +15,7 @@ body, html {
 #content-initial {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 #content-initial-animation {
@@ -301,6 +302,12 @@ h1 {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
+#loading {
+  font-size: 5em;
+  text-align: center;
+  margin: 1em;
+}
+
 .samples {
   width: calc(100% - 4em);
   height: auto;
@@ -436,14 +443,22 @@ h1 {
     -webkit-transform-origin: top right;
   }
 
+  #content-initial {
+    height: 95vh;
+  }
+
   #intro-center {
     font-size: 3em;
-    top: 55%;
+    top: 45%;
     left: 40%;
     width: 70%;
     transform: 0;
     -webkit-transform: 0;
     text-align: left;
+  }
+
+  #social-outer {
+    bottom: 6em;
   }
 
   #initial-mask {
@@ -452,6 +467,12 @@ h1 {
     background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    opacity: 1;
+  }
+
+  #intro {
+    height: 80%;
+    overflow: hidden;
   }
 
   #signup-outer {
@@ -476,6 +497,7 @@ h1 {
   .photo-text > .subtitle {
     text-align: left;
     font-size: 1em;
+    width: 90%;
   }
 
   .samples > h2 {
@@ -485,5 +507,10 @@ h1 {
 
   .samples > a  {
     font-size: 1em;
+  }
+
+  .photo {
+    width: 70%;
+    height: auto;
   }
 }
