@@ -390,6 +390,7 @@ h1 {
 }
 
 #gallery-outer {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -401,6 +402,15 @@ h1 {
   margin: 1em;
   height: 19em;
   width: auto;
+  align-self: center
+}
+
+.photo-creds {
+  font-size: 0.75em;
+  font-weight: 300;
+  color: #fff;
+  position: absolute;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 850px) {

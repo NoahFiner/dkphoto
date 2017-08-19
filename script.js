@@ -1,3 +1,28 @@
+var setAttributionTexts = function() {
+  $(".photo-creds").remove()
+  $(".photo-n").each(function() {
+    var photoHeight = $(this).height();
+
+    var offset = $(this).offset();
+    var top = offset.top - $("#gallery-outer").offset().top + (photoHeight - 14);
+    $(this).after("<p class='photo-creds' style='top: "+(top - 2)+"px; left: "+(offset.left + 5)+"px'>Shot by Noah Finer</p>");
+  });
+  $(".photo-c").each(function() {
+    var photoHeight = $(this).height();
+
+    var offset = $(this).offset();
+    var top = offset.top - $("#gallery-outer").offset().top + (photoHeight - 14);
+    $(this).after("<p class='photo-creds' style='top: "+(top - 2)+"px; left: "+(offset.left + 5)+"px'>Shot by Cormac Dowling</p>");
+  });
+  $(".photo-s").each(function() {
+    var photoHeight = $(this).height();
+    
+    var offset = $(this).offset();
+    var top = offset.top - $("#gallery-outer").offset().top + (photoHeight - 14);
+    $(this).after("<p class='photo-creds' style='top: "+(top - 2)+"px; left: "+(offset.left + 5)+"px'>Shot by Stephanie Zhang</p>");
+  });
+}
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -55,13 +80,17 @@ $(document).ready(function(){
 
   //gallery
   var imgsHidden = true;
-  var imgs = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg"];
+  var imgs = ["rahul.jpg", "perry.jpg", "christian.jpg", "perry2.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg"];
+  var photographers = ["n", "n", "n", "n", "n", "c", "s", "n", "c", "s", "c", "n", "c", "s"]
   var addImgs = function() {
     $("#loading").remove();
     imgsHidden = false;
     for(i = 0; i < imgs.length; i++) {
-      $("#gallery-outer").append("<img id='"+imgs[i]+"' src='img/"+imgs[i]+"' class='photo' />");
+      $("#gallery-outer").append("<img id='"+imgs[i]+"' src='img/"+imgs[i]+"' class='photo photo-"+photographers[i]+"' />");
     }
+    setTimeout(function() {
+      setAttributionTexts();
+    }, 100);
   }
 
   if($(window).scrollTop() > ($("#gallery-outer").offset().top - 1000) && imgsHidden) {
@@ -72,5 +101,7 @@ $(document).ready(function(){
       addImgs();
     }
   });
+
+  $(window).resize(setAttributionTexts);
 
 });
