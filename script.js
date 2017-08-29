@@ -16,7 +16,7 @@ var setAttributionTexts = function() {
   });
   $(".photo-s").each(function() {
     var photoHeight = $(this).height();
-    
+
     var offset = $(this).offset();
     var top = offset.top - $("#gallery-outer").offset().top + (photoHeight - 14);
     $(this).after("<p class='photo-creds' style='top: "+(top - 2)+"px; left: "+(offset.left + 5)+"px'>Shot by Stephanie Zhang</p>");
@@ -63,7 +63,7 @@ $(document).ready(function(){
 
   //intro
   var introAnimation = function(time) {
-    var descs = ["dependable", "beautiful", "intimate", "affordale", "from friends", "amazing", "incredible", "awesome", "sick", "dope", "lit", "cool", "wonderful", "electrifying", "nice", "priceless", "compassionate", "adventerous", "amiable", "courageous", "competitive", "courteous", "empathetic", "exuberant", "generous", "inventive", "innovative", "persistent", "reliable", "sincere", "witty", "bright", "calm", "careful", "creative", "artistic", "artsy", "dynamic", "faithful", "honest", "imaginative", "pioneering", "practical", "peaceful", "reserved", "sensitive", "sympathetic", "thoughtful", "versatile", "understanding"];
+    var descs = ["dependable", "beautiful", "intimate", "affordable", "from friends", "amazing", "incredible", "awesome", "sick", "dope", "lit", "cool", "wonderful", "electrifying", "nice", "priceless", "compassionate", "adventerous", "amiable", "courageous", "competitive", "courteous", "empathetic", "exuberant", "generous", "inventive", "innovative", "persistent", "reliable", "sincere", "witty", "bright", "calm", "careful", "creative", "artistic", "artsy", "dynamic", "faithful", "honest", "imaginative", "pioneering", "practical", "peaceful", "reserved", "sensitive", "sympathetic", "thoughtful", "versatile", "understanding"];
     descs = descs.concat(descs);
     shuffle(descs);
     for(i = 0; i < descs.length; i++) {
