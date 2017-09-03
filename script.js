@@ -80,8 +80,8 @@ $(document).ready(function(){
 
   //gallery
   var imgsHidden = true;
-  var imgs = ["amrita2.jpg", "rahul.jpg", "amrita3.jpg", "perry.jpg", "rahul2.jpg", "christian.jpg", "amrita.jpg", "perry2.jpg", "1.jpg", "2.jpg", "4.jpg", "5.jpg", "7.jpg", "8.jpg", "9.jpg"];
-  var photographers = ["n", "n", "n", "n", "n", "n", "n", "n", "n", "c", "n", "c", "c", "n", "c"];
+  var imgs = ["amrita2.jpg", "rahul.jpg", "amrita3.jpg", "perry.jpg", "jackson.jpg", "rahul2.jpg", "christian.jpg", "amrita.jpg", "perry2.jpg", "1.jpg", "2.jpg", "4.jpg", "5.jpg", "7.jpg", "8.jpg", "9.jpg"];
+  var photographers = ["n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "c", "n", "c", "c", "n", "c"];
   var addImgs = function() {
     $("#loading").remove();
     imgsHidden = false;
