@@ -90,7 +90,7 @@ $(document).ready(function(){
     }
     setTimeout(function() {
       setAttributionTexts();
-    }, 100);
+    }, 300);
   }
 
   if($(window).scrollTop() > ($("#gallery-outer").offset().top - 1000) && imgsHidden) {
