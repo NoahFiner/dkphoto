@@ -405,14 +405,6 @@ h1 {
   align-self: center
 }
 
-.photo-creds {
-  font-size: 0.75em;
-  font-weight: 300;
-  color: #fff;
-  position: absolute;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
-}
-
 @media screen and (max-width: 850px) {
   .subtitle {
     width: 80%;

@@ -1,28 +1,3 @@
-var setAttributionTexts = function() {
-  $(".photo-creds").remove()
-  $(".photo-n").each(function() {
-    var photoHeight = $(this).height();
-
-    var offset = $(this).offset();
-    var top = offset.top - $("#gallery-outer").offset().top + (photoHeight - 14);
-    $(this).after("<p class='photo-creds' style='top: "+(top - 2)+"px; left: "+(offset.left + 5)+"px'>Shot by Noah Finer</p>");
-  });
-  $(".photo-c").each(function() {
-    var photoHeight = $(this).height();
-
-    var offset = $(this).offset();
-    var top = offset.top - $("#gallery-outer").offset().top + (photoHeight - 14);
-    $(this).after("<p class='photo-creds' style='top: "+(top - 2)+"px; left: "+(offset.left + 5)+"px'>Shot by Cormac Dowling</p>");
-  });
-  $(".photo-s").each(function() {
-    var photoHeight = $(this).height();
-
-    var offset = $(this).offset();
-    var top = offset.top - $("#gallery-outer").offset().top + (photoHeight - 14);
-    $(this).after("<p class='photo-creds' style='top: "+(top - 2)+"px; left: "+(offset.left + 5)+"px'>Shot by Stephanie Zhang</p>");
-  });
-}
-
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -80,17 +55,13 @@ $(document).ready(function(){
 
   //gallery
   var imgsHidden = true;
-  var imgs = ["amrita2.jpg", "rahul.jpg", "amrita3.jpg", "perry.jpg", "jackson.jpg", "rahul2.jpg", "christian.jpg", "amrita.jpg", "perry2.jpg", "1.jpg", "2.jpg", "4.jpg", "5.jpg", "7.jpg", "8.jpg", "9.jpg"];
-  var photographers = ["n", "n", "n", "n", "n", "n", "n", "n", "n", "n", "c", "n", "c", "c", "n", "c"];
+  var imgs = ["saket2.jpg", "lauren2.jpg", "kassen2.jpg", "rahul.jpg", "amrita2.jpg", "perry.jpg", "jackson.jpg", "saket1.jpg", "lauren1.jpg", "kassen1.jpg", "rahul2.jpg", "amrita3.jpg", "christian.jpg", "amrita.jpg", "1.jpg", "4.jpg"];
   var addImgs = function() {
     $("#loading").remove();
     imgsHidden = false;
     for(i = 0; i < imgs.length; i++) {
-      $("#gallery-outer").append("<img id='"+imgs[i]+"' src='img/"+imgs[i]+"' class='photo photo-"+photographers[i]+"' />");
+      $("#gallery-outer").append("<img id='"+imgs[i]+"' src='img/"+imgs[i]+"' class='photo' />");
     }
-    setTimeout(function() {
-      setAttributionTexts();
-    }, 300);
   }
 
   if($(window).scrollTop() > ($("#gallery-outer").offset().top - 1000) && imgsHidden) {
@@ -101,7 +72,5 @@ $(document).ready(function(){
       addImgs();
     }
   });
-
-  $(window).resize(setAttributionTexts);
 
 });
