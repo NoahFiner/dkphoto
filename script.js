@@ -55,7 +55,7 @@ $(document).ready(function(){
 
   //gallery
   var imgsHidden = true;
-  var imgs = ["amanda.jpg", "theo.jpg", "zac.jpg", "laurenc.jpg", "jaden.jpg", "emma.jpg", "jordan.jpg", "lucas.jpg", "maja.jpg", "amanda2.jpg", "amrita3.jpg", "philip.jpg", "ann.jpg", "kassen1.jpg", "atul.jpg", "kyle.jpg", "kalyan.jpg", "lauren1.jpg", "david.jpg", "sasha.jpg", "vikram.jpg", "rahul.jpg", "saket2.jpg", "andrea.jpg", "ann2.jpg", "amrita2.jpg", "perry.jpg", "jackson.jpg", "saket1.jpg", "lauren2.jpg", "rahul2.jpg", "christian.jpg", "1.jpg", "4.jpg"];
+  var imgs = ["amanda.jpg", "adam.jpg", "sasha.jpg", "laurenc.jpg", "kalyan.jpg", "emma.jpg", "jordan.jpg", "amrita3.jpg", "lucas.jpg", "maja.jpg", "amanda2.jpg", "philip.jpg", "ann.jpg", "jaden.jpg", "kassen1.jpg", "atul.jpg", "kyle.jpg", "zac.jpg", "lauren1.jpg", "david.jpg", "theo.jpg", "vikram.jpg", "rahul.jpg", "andrea.jpg", "saket2.jpg", "ann2.jpg", "christian.jpg", "amrita2.jpg", "perry.jpg", "jackson.jpg", "saket1.jpg", "lauren2.jpg", "rahul2.jpg", "1.jpg", "4.jpg"];
   var addImgs = function() {
     $("#loading").remove();
     imgsHidden = false;
